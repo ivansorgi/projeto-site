@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Animação</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        article {
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #ff0000;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ff0000;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+
+        a:hover {
+            color: #000000;
+        }
+
+        a:hover::before {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+    </header>
+
+    <article>
+        <h2>Artigo 1</h2>
+        <p>Este é o primeiro artigo. Nele, você pode adicionar o conteúdo que desejar.</p>
+    </article>
+
+    <article>
+        <h2>Artigo 2</h2>
+        <p>Este é o segundo artigo. Sinta-se livre para inserir mais informações aqui.</p>
+    </article>
+
+    <footer>
+        <a href="#"></a>
+        <a href="#">Link 2</a>
+    </footer>
+</body>
+</html>
