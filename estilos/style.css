@@ -10,8 +10,25 @@
   }
   
 
-body {
-    background-color: rgb(32, 8, 54);
+  body {
+    background-color: #8a4baf;
+    color: #000000;
+    font-family: Arial, sans-serif;
+  }
+  
+  <style>
+
+  p {
+    margin-bottom: 10px; 
+  }
+
+
+  span {
+    padding-right: 20px; 
+  }
+</style>
+
+<p>Texto com espaço após.<span>Texto com espaço à direita.</span></p>
 
 }
 
