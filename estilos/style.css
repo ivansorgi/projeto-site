@@ -16,6 +16,19 @@
     font-family: Arial, sans-serif;
   }
   
+  <style>
+
+  p {
+    margin-bottom: 10px; 
+  }
+
+
+  span {
+    padding-right: 20px; 
+  }
+</style>
+
+<p>Texto com espaço após.<span>Texto com espaço à direita.</span></p>
 
   h1 {
     color: #000000;
